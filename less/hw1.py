@@ -1,9 +1,12 @@
 #Задача 1:
 
-n = int(input("Введите количество монет : "))
-count = 0
+n = int(input("Количество элементов в массиве : "))
+a = []
 for i in range(n):
-    v = int(input())
-    if v == 1:
+    a.append(int(input()))
+x = int(input("Число которое вы ищите : "))
+count = 0
+for i in a:
+    if i == x:
         count += 1
-print(count if count<n/2 else n-count)
+print("Количество чисел которое вы искали : ", count)
